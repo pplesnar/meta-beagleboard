@@ -1,0 +1,14 @@
+diff --git a/arch/arm/mach-omap2/gpmc.c b/arch/arm/mach-omap2/gpmc.c
+index 993cb5e..62c3ec9 100644
+--- a/arch/arm/mach-omap2/gpmc.c
++++ b/arch/arm/mach-omap2/gpmc.c
+@@ -1545,7 +1545,8 @@
+ 			   of_node_cmp(child->name, "ethernet") == 0 ||
+ 			   of_node_cmp(child->name, "camera") == 0)
+ 			ret = gpmc_probe_generic_child(pdev, child);
+-
++		else
++			ret = gpmc_probe_generic_child(pdev, child);
+ 		if (ret < 0) {
+ 			of_node_put(child);
+ 			return ret;

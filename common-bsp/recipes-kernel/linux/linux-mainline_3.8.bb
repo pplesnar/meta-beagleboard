@@ -533,6 +533,7 @@ SRC_URI += " \
 	file://gpmc/0037-ARM-OMAP2-Convert-ONENAND-to-use-gpmc_cs_program_set.patch \
 	file://gpmc/0038-omap-gpmc-Various-driver-fixes.patch \
 	file://gpmc/0039-gpmc-Add-DT-node-for-gpmc-on-am33xx.patch \
+    file://gpmc/0040-ARM-OMAP2-gpmc-Allow-customchild-node-names.patch \	
 	file://mxt/0001-CHROMIUM-Input-atmel_mxt_ts-refactor-i2c-error-handl.patch \
 	file://mxt/0002-CHROMIUM-Input-atmel_mxt_ts-register-input-device-be.patch \
 	file://mxt/0003-CHROMIUM-Input-atmel_mxt_ts-refactor-input-device-cr.patch \
